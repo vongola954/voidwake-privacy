@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — VOIDWAKE</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07080c;
+        --fg: #eceef2;
+        --muted: #8b919c;
+        --accent: #7ec8e3;
+        --border: #2a2e36;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.55;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        letter-spacing: -0.03em;
+        margin: 0 0 0.5rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+        margin: 2rem 0 0.6rem;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+      }
+      .meta {
+        font-size: 0.85rem;
+        color: var(--muted);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        Application <strong>VOIDWAKE</strong> (package <code>ru.voidwake.game</code>)<br />
+        Effective date: October 3, 2026<br />
+        <a href="privacy.html" hreflang="ru" lang="ru">Русская версия</a>
+        (the Russian version prevails in case of discrepancies)
+      </p>
+
+      <h2>1. General provisions</h2>
+      <p>
+        This Policy describes what data the VOIDWAKE mobile application
+        processes when distributed through RuStore and other channels. By
+        using the application, you agree to the terms of this Policy.
+      </p>
+
+      <h2>2. What data is processed</h2>
+      <p>Starting with version 1.2.0, the application:</p>
+      <ul>
+        <li>
+          stores on the device a local high-score table, the pilot name and
+          game progress — crystals, upgrades, ships, daily missions (via
+          WebView storage / localStorage);
+        </li>
+        <li>
+          uses the <strong>AppMetrica</strong> analytics service (YANDEX LLC)
+          for usage statistics and crash reports: technical device and
+          application identifiers (the advertising ID is not available — the
+          <code>AD_ID</code> permission is excluded), device model, OS
+          version, language, approximate region based on IP, game events
+          (run start and end, wave reached, purchases in the in-game hangar
+          for in-game currency) and crash diagnostics. Precise location is
+          not collected. Data is processed in anonymized form in accordance
+          with the
+          <a href="https://yandex.ru/legal/appmetrica_termsofuse/">AppMetrica terms of use</a>;
+        </li>
+        <li>
+          shows ads through the <strong>Yandex Advertising Network</strong>
+          (Yandex Mobile Ads SDK, YANDEX LLC): rewarded videos (“second
+          chance”, “×2 loot”) — only when the player taps the button, and,
+          when enabled, full-screen ads between runs. The SDK receives
+          technical device and application data (model, OS version,
+          language, network type, IP address and the approximate region
+          derived from it, impression and click events). Ads are requested
+          in child-directed (age-restricted) mode <em>without
+          personalization</em>: no personalization consent is passed,
+          location is not used, and the advertising ID permission
+          (<code>AD_ID</code>) is removed from the application, so the
+          Google advertising ID is not used for advertising purposes. More
+          details —
+          <a href="https://yandex.ru/legal/mobileads_sdk_agreement/">Yandex Mobile Ads SDK terms</a>;
+        </li>
+        <li>
+          when in-app purchases are enabled (crystals, starter pack, ad
+          removal), payment is processed through <strong>RuStore Pay</strong>
+          (VK LLC): card data and payment details are entered in the RuStore
+          payment window and are not shared with the developer. The
+          application receives only the purchase and product identifiers,
+          the payment status and the test-payment flag, and stores the list
+          of granted purchases on the device so that they are not credited
+          twice;
+        </li>
+        <li>
+          may store sound settings and internal game parameters on the
+          device; the progress backup code is generated on the device when
+          the player taps the button and is not sent anywhere;
+        </li>
+        <li>
+          in the browser version on the Yandex Games platform, progress may
+          be synchronized via Yandex Games cloud saves, and ads are shown by
+          the platform — under the Yandex Games rules;
+        </li>
+        <li>does not require registration or signing in to an account;</li>
+        <li>does not request access to contacts, camera, microphone or location;</li>
+        <li>
+          when the online leaderboard is enabled (optional), may send the
+          pilot name, score and wave number to the developer’s server for
+          the high-score table; if the URL is not configured, the data stays
+          on the device only;
+        </li>
+      </ul>
+
+      <h2>3. Android permissions</h2>
+      <p>
+        The application uses the <code>INTERNET</code> and
+        <code>ACCESS_NETWORK_STATE</code> permissions — for AppMetrica
+        analytics, loading ads and (optionally) online high scores — and
+        <code>VIBRATE</code> — for in-game vibration (can be turned off in
+        the settings). The
+        <code>com.google.android.gms.permission.AD_ID</code> permission is
+        intentionally removed from the build. Gameplay and progress do not
+        depend on the network: without internet access, ads are simply not
+        shown.
+      </p>
+
+      <h2>4. Transfer to third parties</h2>
+      <p>
+        The data listed in section 2 is transferred to YANDEX LLC as the
+        operator of the AppMetrica services (statistics and diagnostics)
+        and the Yandex Advertising Network (selection and display of
+        non-personalized ads, impression accounting), and, for purchases,
+        to the RuStore operator (VK LLC) to process the payment. Data is
+        not transferred to or sold to any other third parties. When the
+        application is installed from RuStore, the rules and policy of the
+        RuStore store also apply.
+      </p>
+
+      <h2>5. Storage and deletion</h2>
+      <p>
+        Local data is stored only on the user’s device. Uninstalling the
+        application or clearing the application data in Android settings
+        deletes the saved high scores, progress and settings. Analytics data
+        is stored in AppMetrica for the periods set by the service terms.
+      </p>
+
+      <h2>6. Children</h2>
+      <p>
+        The application is not intended to collect data from children. The
+        recommended age rating is specified in the RuStore listing
+        (guideline: 6+ / arcade game without harmful content). Therefore,
+        ads are requested with the child-directed flag and without
+        personalization, and the advertising ID is not used.
+      </p>
+
+      <h2>7. Changes to this Policy</h2>
+      <p>
+        In case of material changes (for example, connecting new services or
+        collecting new types of data), this Policy will be updated and its
+        effective date changed. The current version is published at this
+        address.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For questions about data processing and the publication of VOIDWAKE,
+        contact the developer using the contact details provided in the
+        application’s listing in RuStore.
+      </p>
+    </main>
+  </body>
+</html>
